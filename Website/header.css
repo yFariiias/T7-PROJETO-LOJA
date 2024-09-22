@@ -135,7 +135,7 @@ nav ul li ul.submenu li a:hover {
 .icons {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Adiciona margem automática para empurrar para a direita */
+    margin-left: auto;
 }
 
 .icons a {
@@ -243,6 +243,38 @@ body, html {
     #mobile-menu ul li.submenu-parent.active ul.submenu {
         display: block;
         visibility: visible;
+    }
+}
+
+/* Ajustes para notebooks */
+@media (min-width: 481px) and (max-width: 768px) {
+    nav {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .close-icon {
+        display: none;
     }
 }
 
