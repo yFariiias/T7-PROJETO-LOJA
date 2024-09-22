@@ -653,13 +653,13 @@ table {
         align-items: flex-start;
         justify-content: center;
         height: auto;
-        padding: 15px;
+        padding: 2px;
         overflow: hidden;
     }
 
     .banner-item {
         width: 100%;
-        padding: 0;
+        padding: 5px;
         box-sizing: border-box;
     }
 
