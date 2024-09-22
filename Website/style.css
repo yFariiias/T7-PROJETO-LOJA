@@ -604,7 +604,7 @@ table {
     padding: 1em;
     max-width: 500px;
     min-width: 320px;
-    margin: 10px auto;
+    margin: 10px auto; /* Alterado para centralizar horizontalmente */
 }
 
 .fvl-d > td {
@@ -653,13 +653,13 @@ table {
         align-items: flex-start;
         justify-content: center;
         height: auto;
-        padding: 6px;
+        padding: 15px;
         overflow: hidden;
     }
 
     .banner-item {
         width: 100%;
-        padding: 1px;
+        padding: 0;
         box-sizing: border-box;
     }
 
@@ -809,44 +809,6 @@ table {
         margin-left: 45px;
     }
 
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 14px;
-        }
-    
-        p {
-            font-size: 12px;
-        }
-    
-        .opening-hours {
-            padding: 0.8em;
-            max-width: 90%;
-        }
-    
-        .fvl-d > td {
-            font-size: 11px;
-            padding: 0.8em;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        h1 {
-            font-size: 12px;
-        }
-    
-        p {
-            font-size: 10px;
-        }
-    
-        .opening-hours {
-            padding: 0.5em;
-        }
-    
-        .fvl-d > td {
-            font-size: 10px;
-            padding: 0.5em;
-        }
-    }
 }
 
 
@@ -878,103 +840,42 @@ table {
     }
 
 }
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     h1 {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .opening-hours {
+        padding: 0.8em;
+        max-width: 90%;
+    }
+
+    .fvl-d > td {
+        font-size: 11px;
+        padding: 0.8em;
     }
 }
 
-/* ENDEREÇO */
-@media (max-width: 1024px) {
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 480px) {
+    h1 {
+        font-size: 12px;
     }
 
-    .map-block {
-        order: -1; /* Para manter a ordem visual desejada */
-        margin-bottom: 20px;
-    }
-}
-
-/* INFORMAÇÕES */
-@media (max-width: 1024px) {
-    .informacoes {
-        padding: 20px;
-    }
-}
-
-/* CONHEÇA */
-@media (max-width: 768px) {
-    .conheca_sobre {
-        text-align: left;
-    }
-}
-
-@media (max-width: 768px) {
-    .coleçoes-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .banner {
-        padding: 20px;
+    p {
+        font-size: 10px;
     }
 
-    .banner-content h1 {
-        font-size: 2rem;
+    .opening-hours {
+        padding: 0.5em;
     }
 
-    .banner-content p {
-        font-size: 1rem;
-    }
-
-    .produtos-grid {
-        justify-content: space-between;
-    }
-
-    .produto {
-        max-width: 45%;
-    }
-
-    .coleçoes-grid {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .recommended-container {
-        flex-direction: row;
-    }
-
-    .recommended-large img, 
-    .recommended-small .recommended-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    .contact-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .contact-block {
-        max-width: 250px;
-    }
-
-    .big-info h3 {
-        font-size: 20px;
-    }
-
-    .big-info p {
-        font-size: 16px;
+    .fvl-d > td {
+        font-size: 10px;
+        padding: 0.5em; 
     }
 }
 
