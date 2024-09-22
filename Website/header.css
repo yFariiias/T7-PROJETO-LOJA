@@ -164,7 +164,7 @@ body, html {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 
     .header-content{
         height: 75px;
@@ -257,7 +257,7 @@ body, html {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .header-content {
         padding: 10px;
     }
@@ -330,7 +330,7 @@ body, html {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
     .header-content {
         flex-direction: column;
         height: auto;
@@ -338,7 +338,7 @@ body, html {
     }
 
     .logo {
-        margin-left: 0;
+        margin-left: 100px;
         margin-top: 20px;
         text-align: center;
     }
