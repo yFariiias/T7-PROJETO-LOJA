@@ -845,5 +845,76 @@ border-collapse: collapse;
     }
 
 }
+@media (max-width: 1024px) {
+    .banner {
+        padding: 20px;
+        text-align: center;
+    }
 
+    .banner-content {
+        padding: 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem; 
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .produtos-grid {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .produto {
+        max-width: 45%;
+    }
+
+    .coleçoes-grid {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .conheca_botoes {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .conheca img {
+        height: 200px;
+    }
+
+    .big-info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .big-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .big-info p {
+        font-size: 1rem;
+    }
+
+    .opening-hours {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 90%;
+    }
+
+    .map-block iframe {
+        width: 100%;
+        height: 300px;
+    }
 }
