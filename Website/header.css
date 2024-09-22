@@ -133,7 +133,6 @@ nav ul li a:hover::after {
 }
 
 nav ul li.active a {
-    font-weight: bold;
 }
 
 nav ul li ul.submenu {
