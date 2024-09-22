@@ -581,7 +581,8 @@ p {
 }
 
 table {
-border-collapse: collapse;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 #activerow {
@@ -603,10 +604,7 @@ border-collapse: collapse;
     padding: 1em;
     max-width: 500px;
     min-width: 320px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 800px;
-    margin-right: 10px;
+    margin: 10px auto;
 }
 
 .fvl-d > td {
@@ -811,8 +809,43 @@ border-collapse: collapse;
         margin-left: 45px;
     }
 
-    .opening-hours, .contact-container {
-        display: none;
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 14px;
+        }
+    
+        p {
+            font-size: 12px;
+        }
+    
+        .opening-hours {
+            padding: 0.8em;
+            max-width: 90%;
+        }
+    
+        .fvl-d > td {
+            font-size: 11px;
+            padding: 0.8em;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 12px;
+        }
+    
+        p {
+            font-size: 10px;
+        }
+    
+        .opening-hours {
+            padding: 0.5em;
+        }
+    
+        .fvl-d > td {
+            font-size: 10px;
+            padding: 0.5em;
+        }
     }
 }
 
