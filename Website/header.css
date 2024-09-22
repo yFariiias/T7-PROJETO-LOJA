@@ -17,7 +17,7 @@ nav ul li ul.submenu {
 
 nav ul li:hover > ul.submenu,
 nav ul li.active > ul.submenu {
-    display: block; /* Permitir que o submenu seja exibido */
+    display: block;
     visibility: visible;
     opacity: 1;
 }
@@ -27,19 +27,21 @@ nav ul li.active > ul.submenu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 30px;
     padding: 0 20px;
 }
 
 .logo {
     flex-grow: 0;
     text-align: left;
+    margin-top: 55px;
+    margin-left: 500px;
 }
 
 .logo img {
     max-width: 50px;
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
-    margin-right: 20px;
 }
 
 .logo img:hover {
@@ -47,10 +49,10 @@ nav ul li.active > ul.submenu {
 }
 
 nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-grow: 1; 
+    display: flex; 
+    justify-content: center; /* Centraliza o menu */
+    align-items: center; /* Alinha o menu verticalmente */
 }
 
 .menu-icon {
@@ -63,8 +65,6 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     align-items: center;
 }
@@ -113,7 +113,7 @@ nav ul li.active a {
 
 nav ul li ul.submenu {
     width: 120px;
-    margin-top: 15px;
+    margin-top: 2px;
     padding: 10px 0;
     border-radius: 5px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -135,11 +135,12 @@ nav ul li ul.submenu li a:hover {
 }
 
 /*==================== ICONES HEADER ====================*/
+
 .icons {
     display: flex;
     align-items: center;
-    flex: 0 0 auto;
-    margin-left: auto;
+    margin-top: 55px;
+    margin-right: 500px;
 }
 
 .icons a {
@@ -164,6 +165,10 @@ body, html {
 }
 
 @media (max-width: 768px) {
+
+    .header-content{
+        height: 75px;
+    }
     .menu-icon {
         display: block;
     }
@@ -175,6 +180,8 @@ body, html {
     .logo {
         flex-grow: 1;
         text-align: center;
+        margin-left: -35px;
+        margin-top: 0;
     }
 
     .icons {
@@ -207,9 +214,18 @@ body, html {
     #mobile-menu ul {
         display: flex;
         flex-direction: column;
-        text-align: left;
-        padding-left: 10px;
-        margin-top: 70px;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    #mobile-menu ul li {
+        margin-bottom: 20px;
+    }
+
+    #mobile-menu ul li a {
+        font-size: 1.2rem;
+        padding: 10px 15px; 
     }
 
     #mobile-menu.open {
