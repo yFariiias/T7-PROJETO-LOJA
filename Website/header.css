@@ -329,3 +329,64 @@ body, html {
         margin-left: 10px;
     }
 }
+
+@media (max-width: 1024px) {
+    .header-content {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .icons {
+        margin-top: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    nav ul li ul.submenu {
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        background-color: transparent;
+        margin: 10px 0;
+        opacity: 1;
+        transition: none;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .icons a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+}
