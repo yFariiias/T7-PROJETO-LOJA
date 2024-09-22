@@ -22,18 +22,42 @@ nav ul li.active > ul.submenu {
     opacity: 1;
 }
 
+/*==================== MENU SUBMENU ====================*/
+nav ul li ul.submenu {
+    display: none; 
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    list-style-type: none;
+    margin: 0;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+nav ul li:hover > ul.submenu,
+nav ul li.active > ul.submenu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
 /*==================== HEADER ====================*/
 .header-content {
     padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 5px;
 }
 
 .logo {
     flex-grow: 0;
-    margin-right: 620px;
+    margin-left: 550px;
     margin-top: 50px;
 }
 
@@ -70,7 +94,7 @@ nav ul {
 
 nav ul li {
     margin-right: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -131,7 +155,7 @@ nav ul li ul.submenu li a {
 }
 
 nav ul li ul.submenu li a:hover {
-    background-color: #00153828;
+    background-color: #f1f3f6;
     color: #001538;
 }
 
@@ -139,15 +163,14 @@ nav ul li ul.submenu li a:hover {
 .icons {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin-left: auto;
     padding: 0;
-    justify-content: flex-start;
 }
 
 .icons a {
     margin-top: 45px;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s ease;
