@@ -659,7 +659,7 @@ table {
 
     .banner-item {
         width: 100%;
-        padding: 0;
+        padding: 1px;
         box-sizing: border-box;
     }
 
