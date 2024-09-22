@@ -33,6 +33,7 @@ nav ul li.active > ul.submenu {
 .logo {
     flex-grow: 0;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .logo img {
@@ -172,7 +173,9 @@ body, html {
     .logo {
         flex-grow: 1;
         text-align: center;
-    }
+        margin-right: 0px;
+        margin-top: 0px;
+        }
 
     .icons {
         display: none;
@@ -266,6 +269,13 @@ body, html {
         max-width: 50px;
     }
 
+    .logo {
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
     .icons a {
         font-size: 20px;
         margin-left: 50px;
@@ -296,6 +306,13 @@ body, html {
     .logo img {
         max-width: 50px;
         margin-right: 10px;
+    }
+
+    .logo {
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 5px;
     }
 
     .icons a {
