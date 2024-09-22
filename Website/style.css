@@ -918,3 +918,77 @@ border-collapse: collapse;
         height: 300px;
     }
 }
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    .banner {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .banner-content {
+        max-width: 80%;
+        padding: 15px; 
+    }
+
+    .banner-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .banner-content .btn {
+        padding: 10px 20px; 
+        font-size: 1rem; 
+    }
+
+    .produtos-grid {
+        gap: 10px;
+    }
+
+    .produto {
+        max-width: 250px;
+    }
+
+    .produto img {
+        height: 350px;
+    }
+
+    .coleçoes-grid, .recommended-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .recommended-large img {
+        width: 100%;
+        height: auto; 
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-block {
+        margin-top: 20px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .big-info {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .opening-hours {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
