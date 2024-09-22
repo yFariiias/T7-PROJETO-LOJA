@@ -17,7 +17,7 @@ nav ul li ul.submenu {
 
 nav ul li:hover > ul.submenu,
 nav ul li.active > ul.submenu {
-    display: block; /* Permitir que o submenu seja exibido */
+    display: block;
     visibility: visible;
     opacity: 1;
 }
@@ -26,22 +26,19 @@ nav ul li.active > ul.submenu {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 20px;
 }
 
 .logo {
     flex-grow: 0;
-    text-align: left;
+    margin-right: 20px;
 }
 
 .logo img {
     max-width: 50px;
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
-    margin-right: 20px;
 }
-
 .logo img:hover {
     transform: scale(1.1);
 }
@@ -113,7 +110,7 @@ nav ul li.active a {
 
 nav ul li ul.submenu {
     width: 120px;
-    margin-top: 15px;
+    margin-top: 2px;
     padding: 10px 0;
     border-radius: 5px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -138,8 +135,7 @@ nav ul li ul.submenu li a:hover {
 .icons {
     display: flex;
     align-items: center;
-    flex: 0 0 auto;
-    margin-left: auto;
+    margin-left: auto; /* Adiciona margem automática para empurrar para a direita */
 }
 
 .icons a {
@@ -207,9 +203,18 @@ body, html {
     #mobile-menu ul {
         display: flex;
         flex-direction: column;
-        text-align: left;
-        padding-left: 10px;
-        margin-top: 70px;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    #mobile-menu ul li {
+        margin-bottom: 20px;
+    }
+
+    #mobile-menu ul li a {
+        font-size: 1.2rem;
+        padding: 10px 15px; 
     }
 
     #mobile-menu.open {
