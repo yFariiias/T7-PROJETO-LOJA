@@ -299,7 +299,8 @@ body, html {
     }
 
     .close-icon {
-        font-size: 28px;
+        font-size: 25px;
+        margin-top: 0px;
     }
 }
 
@@ -340,7 +341,7 @@ body, html {
 
     .close-icon {
         font-size: 25px;
-        margin-top: -15px;
+        margin-top: -20px;
     }
 }
 
