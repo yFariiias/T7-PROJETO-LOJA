@@ -168,9 +168,17 @@ body, html {
 
     .header-content{
         height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .menu-icon {
         display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1001;
+        cursor: pointer;
     }
 
     nav {
@@ -259,11 +267,14 @@ body, html {
 
 @media (max-width: 500px) {
     .header-content {
-        padding: 10px;
+        padding: 0px;
     }
 
     .menu-icon {
         font-size: 30px;
+        position: absolute;
+        right: 355px;
+        top: 118px;
     }
 
     .logo img {
@@ -295,8 +306,8 @@ body, html {
     }
 
     .logo {
-        margin-left: 20px;
-        margin-top: 0;
+        margin-left: 220px;
+        margin-top: 70px;
     }
 
     .logo img {
@@ -321,7 +332,8 @@ body, html {
     }
 
     .icons {
-        margin-right: 20px;
+        margin-right: 250px;
+        margin-top: 75px;
     }
 
     .icons a {
@@ -330,7 +342,7 @@ body, html {
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1350px) {
     .header-content {
         flex-direction: column;
         height: auto;
@@ -338,8 +350,8 @@ body, html {
     }
 
     .logo {
-        margin-left: 100px;
-        margin-top: 20px;
+        margin-left: 0px;
+        margin-top: 100px;
         text-align: center;
     }
 
