@@ -655,12 +655,12 @@ border-collapse: collapse;
         align-items: flex-start;
         justify-content: center;
         height: auto;
-        padding: 15px;
+        padding: 5px;
         overflow: hidden;
     }
 
     .banner-item {
-        width: 80%;
+        width: 95%;
         padding: 0;
         box-sizing: border-box;
     }
