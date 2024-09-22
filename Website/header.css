@@ -24,32 +24,32 @@ nav ul li.active > ul.submenu {
 
 /*==================== HEADER ====================*/
 .header-content {
+    padding: 10px 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    flex-wrap: wrap;
+    height: 5px;
 }
 
 .logo {
     flex-grow: 0;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-left: 250px;
+    margin-top: 50px;
 }
 
 .logo img {
-    max-width: 50px;
+    max-width: 55px;
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
+    margin: 35px;
 }
 .logo img:hover {
     transform: scale(1.1);
+    filter: grayscale(0%) invert(0%);
 }
 
 nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: auto;
 }
 
 .menu-icon {
@@ -65,23 +65,25 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
 }
 
 nav ul li {
-    margin-right: 15px;
+    margin-right: 75px;
     margin-bottom: 10px;
     position: relative;
 }
 
 nav ul li a {
-    color: #000000;
+    color: #001538;
     text-decoration: none;
     font-size: 15px;
+    font-weight: normal;
     transition: color 0.3s ease;
     position: relative;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 135px;
 }
 
 nav ul li a:hover {
@@ -137,14 +139,17 @@ nav ul li ul.submenu li a:hover {
 .icons {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Adiciona margem automática para empurrar para a direita */
+    margin-left: auto;
 }
 
 .icons a {
-    margin-left: 15px;
-    font-size: 18px;
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 45px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
     color: #001538;
-    transition: transform 0.3s ease;
 }
 
 .icons a:hover {
@@ -259,6 +264,7 @@ body, html {
 @media (max-width: 500px) {
     .header-content {
         padding: 10px;
+        height: 50px;
     }
 
     .menu-icon {
@@ -272,8 +278,8 @@ body, html {
     .logo {
         flex-grow: 1;
         text-align: center;
-        margin-right: 0px;
-        margin-top: 0px;
+        margin-left: -5px;
+        margin-top: 5px;
     }
 
     .icons a {
@@ -297,6 +303,7 @@ body, html {
 @media (max-width: 390px) {
     .header-content {
         padding: 8px;
+        height: 65px;
     }
 
     .menu-icon {
@@ -305,13 +312,13 @@ body, html {
 
     .logo img {
         max-width: 50px;
-        margin-right: 10px;
+        margin-right: 40px;
     }
 
     .logo {
         flex-grow: 1;
         text-align: center;
-        margin-right: 20px;
+        margin-left: -5px;
         margin-top: 5px;
     }
 
@@ -330,6 +337,7 @@ body, html {
 
     .close-icon {
         font-size: 25px;
+        margin-top: -10px;
     }
 }
 
