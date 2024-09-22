@@ -123,3 +123,50 @@ body {
       font-size: 0.9rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+
+  .footer-header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .footer-logo {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .footer-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .social-icon, .menu {
+    flex-direction: column;
+    align-items: center; 
+    margin: 10px 0;
+  }
+
+  .social-icon__item, .menu__item {
+    margin: 10px 0; 
+  }
+
+  .social-icon__link {
+    font-size: 1.8rem;
+  }
+
+  .menu__link {
+    font-size: 1.1rem;
+  }
+
+  .footer p {
+    font-size: 0.95rem;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
