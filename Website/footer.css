@@ -89,7 +89,7 @@ body {
 /*======================================================== MEDIA QUERY =========================================================*/
 
 /* FOOTER */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .footer {
       text-align: center;
       padding: 30px 10px; 
@@ -114,7 +114,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .social-icon__link, .menu__link {
       font-size: 1rem;
   }
@@ -124,49 +124,15 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
-  .footer {
-    flex-direction: column;
-    padding: 20px 30px;
-  }
-
-  .footer-header {
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  .footer-logo {
-    width: 40px;
-    margin-bottom: 10px;
-  }
-
-  .footer-title {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .social-icon, .menu {
-    flex-direction: column;
-    align-items: center; 
-    margin: 10px 0;
-  }
-
-  .social-icon__item, .menu__item {
-    margin: 10px 0; 
-  }
-
-  .social-icon__link {
-    font-size: 1.8rem;
-  }
-
-  .menu__link {
-    font-size: 1.1rem;
-  }
-
+@media (max-width: 390px) {
   .footer p {
-    font-size: 0.95rem;
-    margin: 10px 0;
-    text-align: center;
+    font-size: 0.8rem;
+  }
+  .social-icon__link, .menu__link {
+    font-size: 0.9rem;
+  }
+  .footer-logo {
+    width: 50px;
   }
 }
+
