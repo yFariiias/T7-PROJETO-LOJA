@@ -28,7 +28,7 @@ nav ul li.active > ul.submenu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5px;
+    height: 40px;
 }
 
 .logo {
@@ -275,7 +275,7 @@ body, html {
 
     .logo img {
         max-width: 50px;
-        margin-right: 55px;
+        margin-right: 70px;
     }
 
     .logo {
@@ -316,7 +316,7 @@ body, html {
 
     .logo img {
         max-width: 50px;
-        margin-right: 55px;
+        margin-right: 70px;
     }
 
     .logo {
