@@ -167,7 +167,7 @@ body, html {
 @media (max-width: 780px) {
 
     .header-content{
-        height: 75px;
+        height: 45px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -267,6 +267,7 @@ body, html {
 
 @media (max-width: 500px) {
     .header-content {
+        height: 35px;
         padding: 0px;
     }
 
