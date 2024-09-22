@@ -266,7 +266,7 @@ body, html {
 @media (max-width: 500px) {
     .header-content {
         padding: 10px;
-        height: 50px;
+        height: 70px;
     }
 
     .menu-icon {
@@ -275,12 +275,13 @@ body, html {
 
     .logo img {
         max-width: 50px;
+        margin-right: 55px;
     }
 
     .logo {
         flex-grow: 1;
         text-align: center;
-        margin-left: -5px;
+        margin-left: 0px;
         margin-top: 5px;
     }
 
@@ -305,7 +306,7 @@ body, html {
 @media (max-width: 390px) {
     .header-content {
         padding: 8px;
-        height: 65px;
+        height: 70px;
     }
 
     .menu-icon {
@@ -314,7 +315,7 @@ body, html {
 
     .logo img {
         max-width: 50px;
-        margin-right: 40px;
+        margin-right: 55px;
     }
 
     .logo {
