@@ -646,24 +646,27 @@ table {
 /*======================================================== MEDIA QUERY =========================================================*/
 
 /* BANNER */
-@media (max-width: 480px) {
+
+@media (min-width: 390px) and (max-width: 490px) {
     .banner {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         height: auto;
-        padding: 2px;
+        padding: 0;
+        margin: 0; 
         overflow: hidden;
+        width: 100%;
     }
 
     .banner-item {
         width: 100%;
-        padding: 5px;
+        padding: 0;
         box-sizing: border-box;
     }
 
-    .banner-item img {
+    .banner-carousel img {
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -672,9 +675,8 @@ table {
     }
 
     .banner-content {
-        width: 90%;
-        max-width: 90%;
-        padding: 10px;
+        width: 100%;
+        max-width: 100%;
         text-align: left;
         margin: 0;
     }
@@ -697,10 +699,64 @@ table {
     .slick-dots, .prev-arrow, .next-arrow {
         display: none !important;
     }
-
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+        .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: auto;
+            padding: 0;
+            margin: 0; 
+            overflow: hidden;
+            width: 100%;
+        }
+    
+        .banner-item {
+            width: 100%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .banner-carousel img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            border-radius: 0px;
+        }
+    
+        .banner-content {
+            width: 100%;
+            max-width: 100%;
+            padding: 10px;
+            text-align: left;
+            margin: 0;
+        }
+    
+        .banner-content h1 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+    
+        .banner-content p {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+    
+        .btn {
+            font-size: 0.9rem;
+            padding: 8px 15px;
+        }
+    
+        .slick-dots, .prev-arrow, .next-arrow {
+            display: none !important;
+        }
+    }
+
+@media (max-width: 800px) {
     .banner-carousel img {
         width: 400px;
         height: 225px;
@@ -724,7 +780,7 @@ table {
     }
 
 /* COLEÇÕES */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .coleçoes-grid {
         flex-direction: column;
         align-items: center;
@@ -746,7 +802,7 @@ table {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .coleçoes h2 {
         font-size: 2rem;
         text-align: left;
@@ -761,8 +817,24 @@ table {
     }
 }
 
+@media (max-width: 390px) {
+    .coleçoes h2 {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 33px;
+    }
+
+    .recommended-large img, .recommended-small .recommended-item img, .image-wrapper img {
+        width: 99%;
+        height: 180px;
+        border-radius: 0px !important;
+        margin-left: 15px;
+    }
+}
+}
+
 /* CONHEÇA */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .conheca_sobre {
         text-align: left;
     }
@@ -812,7 +884,7 @@ table {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .conheca_botoes {
         width: 100%;
     }
@@ -840,7 +912,7 @@ table {
     }
 
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     h1 {
         font-size: 14px;
     }
@@ -860,7 +932,7 @@ table {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     h1 {
         font-size: 12px;
     }
@@ -877,6 +949,4 @@ table {
         font-size: 10px;
         padding: 0.5em; 
     }
-}
-
 }
