@@ -52,20 +52,20 @@ nav ul li.active > ul.submenu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5px;
+    height: 35px;
 }
 
 .logo {
     flex-grow: 0;
-    margin-left: 550px;
-    margin-top: 50px;
+    margin-left: 320px;
+    margin-top: 60px;
 }
 
 .logo img {
-    max-width: 55px;
+    max-width: 65px;
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
-    margin: 35px;
+    margin: 40px;
 }
 .logo img:hover {
     transform: scale(1.1);
@@ -73,7 +73,7 @@ nav ul li.active > ul.submenu {
 }
 
 nav {
-    margin: 0 auto;
+    margin: 0 0 0 480px;
 }
 
 .menu-icon {
@@ -89,7 +89,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
@@ -132,9 +131,6 @@ nav ul li a:hover::after {
     transform-origin: left;
 }
 
-nav ul li.active a {
-}
-
 nav ul li ul.submenu {
     width: 120px;
     margin-top: 2px;
@@ -162,14 +158,16 @@ nav ul li ul.submenu li a:hover {
 .icons {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     margin-left: auto;
+    margin-right: 380px;
+    gap: 15px;
     padding: 0;
+    margin-top: 60px;
 }
 
 .icons a {
-    margin-top: 45px;
-    margin-left: 5px;
-    margin-right: 10px;
+    margin: 0;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s ease;
@@ -197,6 +195,7 @@ body, html {
 
     nav {
         display: none;
+        margin: 0 0 0 0;
     }
 
     .logo {
