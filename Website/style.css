@@ -667,56 +667,9 @@ table {
     .slick-dots, .prev-arrow, .next-arrow {
         display: none !important;
     }
-
-    .coleçoes h2 {
-        font-size: 2rem;
-        text-align: center;
-        margin-left: 33px;
-    }
-
-    .recommended-large img, .recommended-small .recommended-item img, .image-wrapper img {
-        width: 99%;
-        height: 180px;
-        border-radius: 0px !important;
-        margin-left: 15px;
-        display: none;
-    }
-    
-    .coleçoes {
-        display: none;
-    }
-
-    .coleçoes-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        border-radius: 0px;
-    }
-
-    .recommended-container {
-        flex-direction: column;
-        border-radius: 0px;
-    }
-
-    .conheca {
-        border-radius: 0;
-    }
-    .conheca_titulo {
-        font-size: 1.6rem;
-        text-align: center;
-        margin-right: 40px;
-    }
-
-    .produtos h2, .coleçoes h2 {
-        font-size: 1.6rem;
-    }
     
     .contact-container{
         border-radius: 0;
-    }
-
-    .facility p {
-        font-size: 15px;
     }
 
     .opening-hours p {
@@ -781,19 +734,6 @@ table {
         display: none !important;
     }
 
-    .coleçoes h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: 33px;
-    }
-
-   
-
-    .recommended-container {
-        flex-direction: column;
-        border-radius: 0px;
-    }
-
     h1 {
         font-size: 14px;
     }
@@ -816,7 +756,160 @@ table {
         padding: 0.8em;
     }
 
-    .facility p {
-        font-size: 15px;
+}
+
+@media (max-width: 400px) {
+    .conheca {
+        max-width: 180px;
+    }
+
+    .facility_title, .conheca_titulo {
+        font-size: 1rem;
+    }
+
+    .overlay h3 {
+        font-size: 1rem;
+    }
+
+    .overlay p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .conheca_sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conheca {
+        max-width: 200px;
+    }
+
+    .facility_title, .conheca_titulo {
+        font-size: 1.2rem;
+    }
+
+    .overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .overlay p {
+        font-size: 0.8rem;
+    }
+
+    .conheca_botoes {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .conheca_sobre {
+        max-width: 750px;
+    }
+
+    .conheca {
+        max-width: 240px;
+    }
+
+    .facility_title, .conheca_titulo {
+        font-size: 1.3rem;
+    }
+
+    .overlay h3 {
+        font-size: 1.4rem;
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+    }
+
+    .conheca_botoes {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .conheca_sobre {
+        max-width: 1000px;
+    }
+
+    .conheca {
+        max-width: 280px;
+    }
+
+    .conheca_botoes {
+        gap: 25px;
+    }
+
+    .facility_title, .conheca_titulo {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .conheca {
+        max-width: 350px;
+    }
+
+    .conheca_botoes {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-wrapper img, .recommended-item {
+        border-radius: 0;
+    }
+
+    .content h3 {
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .recommended-container {
+        flex-direction: column;
+    }
+
+    .recommended-large {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .recommended-large img {
+        width: 100%;
+        height: auto;
+    }
+
+    .recommended-small .recommended-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        padding: 5px;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .content h3 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 5px 10px;
     }
 }
