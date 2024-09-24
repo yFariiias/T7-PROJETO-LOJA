@@ -417,3 +417,31 @@ body, html {
         display: none;
     }
 }
+
+@media (max-width: 1024px) {
+    .header-content {
+        padding: 10px 10px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .icons {
+        margin-right: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+}
