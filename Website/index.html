@@ -17,6 +17,41 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            display: flex;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .close {
+            cursor: pointer;
+            float: right;
+            font-size: 24px;
+            color: #aaa;
+        }
+
+        .close:hover {
+            color: black;
+        }
+    </style>
 </head>
 <body>
 
@@ -61,6 +96,13 @@
 </header>
 
 <!--======================================================== BANNER & WELCOME =========================================================-->
+
+<div id="popup" class="popup"></div>
+    <div class="popup-content">
+        <span class="close" id="close-popup">&times;</span>
+        <h2>SE LEU MAMOU</h2>
+    </div>
+</div>
 
 <div class="banner">
     <div class="banner-carousel">
@@ -357,6 +399,26 @@
 </footer>
 
 <script src="index.js"></script>
+
+<script>
+const popup = document.getElementById('popup');
+const closePopup = document.getElementById('close-popup');
+
+
+window.onload = function() {
+    popup.style.display = 'flex';
+}
+
+closePopup.onclick = function() {
+    popup.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.style.display = 'none';
+    }
+}
+</script>
 
 <!--========================================================SE VOCÊ LEU ME DEU =========================================================-->
 </body>
