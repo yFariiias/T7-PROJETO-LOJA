@@ -3,6 +3,33 @@ body {
     overflow-x: hidden;
 }
 
+.close-icon {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.logo img {
+    max-width: 85px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%) invert(0%);
+}
+
+
 .register-page {
     width: 100%;
     max-width: 400px;
@@ -57,7 +84,7 @@ body {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .register-page {
         width: 90%;
     }
@@ -68,6 +95,10 @@ body {
 
     .message {
         font-size: 12px;
+    }
+
+    .menu-icon {
+        display: none;
     }
 }
 
