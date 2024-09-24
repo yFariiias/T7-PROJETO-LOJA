@@ -6,16 +6,17 @@
     <title>Team Liquid Store Brasil</title>
     <link rel="icon" type="image/png" href="//loja.teamliquid.com.br/cdn/shop/files/logo_181628db-1670-4d83-8677-815d3e68146c.png?crop=center&height=32&v=1707850916&width=32">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<!--======================================================== SCRIPTS ========================================================-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!--========================================================SE VOCÊ LEU ME DEU =========================================================-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 </head>
 <body>
 
@@ -27,13 +28,13 @@
             <i class="fas fa-bars"></i>
         </div>
         <div class="logo">
-            <a href="index.html"><img draggable="false" src="TL_Logo3.png" alt="Team Liquid"></a>
+            <a href="index.html"><img draggable="false" src="/images/TL_Logo2.png" alt="Team Liquid"></a>
         </div>
         <div class="icons">
-            <a href="#" class="icon-login">
+            <a href="login.html" class="icon-login">
                 <i class="fas fa-user"></i>
             </a>
-            <a href="#" class="icon-cart">
+            <a href="carrinho.html" class="icon-cart">
                 <i class="fas fa-shopping-cart"></i>
             </a>
         </div>
@@ -90,11 +91,18 @@
     </div>
     <button class="prev-arrow">‹</button>
     <button class="next-arrow">›</button>
+    
+    <ul class="slick-dots">
+        <li class="slick-active"><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+    </ul>
 </div>
 
     <div class="container">
-        <div class="big-info">
-            <h3>Seja Bem-Vindo! A Loja Oficial da Team Liquid Brasil!</h3>
+        <div class="container-desktop">
+    <div class="big-info">
+            <h3>LOJA OFICIAL DA TEAM LIQUID BRASIL!</h3>
             <h3 class="big-info_subtitle">Nós oferecemos o cuidado completo que seu guarda roupa merece!</h3>
             <p>Transformando Sua Voz no Melhor Equipamento de Esports, sempre buscamos melhorar nossa mercadoria com base no seu feedback para garantir que você obtenha o máximo de nossas roupas.</p>
           </div>
@@ -102,8 +110,9 @@
 
 <!--======================================================== PRODUTOS =========================================================-->
 
+    <div class="container-desktop">
     <div class="produtos">
-        <h2>Produtos em Destaque</h2>
+        <h2>PRODUTOS EM DESTAQUE</h2>
         <div class="produtos-grid">
             <div class="produto">
                 <img draggable="false" src="https://loja.teamliquid.com.br/cdn/shop/files/custom_resized_ac84768d-d53d-4d48-a717-f20aa4175dd9.jpg?v=1700238508&width=360" alt="Produto 1">
@@ -134,8 +143,9 @@
 
 <!--======================================================== NOVAS COLEÇÕES  =========================================================-->
 
+    <div class="container-desktop">
     <div class="coleçoes">
-        <h2>Novas Coleções</h2>
+        <h2>NOVAS COLEÇÕES</h2>
         <div class="coleçoes-grid">
             <div class="coleçao">
             </div>
@@ -187,17 +197,18 @@
     </div>
 
     
-<!--======================================================== OUTRAS INFORMAÇÕES  =========================================================-->
+<!--======================================================== FACILITY  =========================================================-->
+
 
 <div class="conheca_sobre">
     <h2 class="conheca_titulo"></h2>
     <div class="conheca_botoes">
         <div class="conheca clinica">
             <a href="#">
-                <img draggable="false" src="https://cdn.prod.website-files.com/65dddae646838878d1f915cd/660f98da3d7bac041112cd17_65dddb9ced9a3756a5ae0061_facility-la%402x.webp" alt="Los Angeles"/>
+                <img draggable="false" src="https://awtf.us/static/media/hero5.584c900d20b53350bfb5.jpg" alt="Los Angeles"/>
                 <div class="overlay">
-                    <h3>Alienware Training Facility</h3>
-                    <p>Los Angeles (Estados Unidos)</p>
+                    <h3>Los Angeles Alienware Training Facility</h3>
+                    <p>Equipamentos de última geração, estúdios de gravação, salas de aula para workshops e coaching personalizado.</p>
                     <p>Capacidade: 100 pessoas</p>
                     <p>Área: 2000m²</p>
                 </div>
@@ -207,10 +218,10 @@
         </div>
         <div class="conheca servico">
             <a href="#">
-                <img draggable="false" src="https://cdn.prod.website-files.com/65dddae646838878d1f915cd/660f98d91f5ec3b9e14dbd0a_65dddb9ced9a3756a5ae006e_facility-eu%402x.webp" alt="Utrecht"/>
+                <img draggable="false" src="https://teamliquid.com/staff/lichter/TLpro/awtfeu/cmd_bart__AWTFEU_0087.jpg" alt="Utrecht"/>
                 <div class="overlay">
-                    <h3>Alienware Training Facility</h3>
-                    <p>Utrecht (Holanda)</p>
+                    <h3>Utrecht Alienware Training Facility</h3>
+                    <p>Infraestrutura moderna e equipada com tecnologia de ponta da Alienware, o espaço oferece uma experiência única.</p>
                     <p>Capacidade: 80 pessoas</p>
                     <p>Área: 1500m²</p>
                 </div>
@@ -220,10 +231,10 @@
         </div>
         <div class="conheca profissional">
             <a href="#">
-                <img draggable="false" src="tlfacility.png" alt="São Paulo"/>
+                <img draggable="false" src="/images/tlfacility.png" alt="São Paulo"/>
                 <div class="overlay">
-                    <h3>Alienware Training Facility</h3>
-                    <p>São Paulo (Brasil)</p>
+                    <h3>São Paulo Alienware Training Facility</h3>
+                    <p>Equipado e Projetado para oferecer uma experiência imersiva e profissional para gamers.</p>
                     <p>Capacidade: 120 pessoas</p>
                     <p>Área: 1800m²</p>
                 </div>
@@ -238,6 +249,9 @@
         <p> Nossas três instalações de jogos premium em todo o mundo estão disponíveis para aluguel para profissionais de esportes eletrônicos e outros grupos. </p>
     </div>
 
+  
+<!--======================================================== MAPA  =========================================================-->
+    <div class="container-desktop">
     <div class="contact-container">
         <div class="contact-block">
             <div class="contact-item">
@@ -251,7 +265,7 @@
                 <i class="fas fa-envelope"></i>
                 <div class="contact-text">
                     <h4>Email</h4>
-                    <p>liquidstore@teamliquid.com</p>
+                    <p> store@teamliquid.com</p>
                 </div>
             </div>
             <div class="contact-item">
@@ -274,7 +288,7 @@
         </div>
     </div>
     
-      <div class="opening-hours">
+    <div class="opening-hours">
         <h1>Horário de Atendimento</h1>
         <p>Nosso time estará disponível para atendê-lo nos horários acima. Sinta-se à vontade para entrar em contato durante esses períodos!</p>
         <table>
@@ -322,14 +336,14 @@
 
 <footer class="footer">
     <div class="footer-header">
-        <img draggable="false" src="TL_Logo3.png"alt="Logo" class="footer-logo">
+        <img draggable="false" src="/images/TL_Logo2.png"alt="Logo" class="footer-logo">
         <h1 class="footer-title">TEAM LIQUID</h1>
     </div>
     <ul class="social-icon">
         <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/guilherme-farias-435269245/">
             <i class="fa-brands fa-linkedin-in"></i>
         </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/guifariiias/">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
             <i class="fa-brands fa-instagram"></i>
         </a></li>
     </ul>
@@ -342,7 +356,7 @@
     <p>&copy;2024 Guilherme Farias | Todos os direitos reservados.</p>
 </footer>
 
-<script src="index.js"></script>
+<script src="/scripts/index.js"></script>
 
 <!--========================================================SE VOCÊ LEU ME DEU =========================================================-->
 </body>
