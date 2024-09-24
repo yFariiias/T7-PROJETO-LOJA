@@ -1,0 +1,88 @@
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.register-page {
+    width: 100%;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #092c68;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-form button:hover {
+    background-color: #001538;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.message a {
+    color: #001538;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .register-page {
+        width: 90%;
+    }
+
+    .register-form button {
+        font-size: 14px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .register-page {
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .register-form input,
+    .register-form button {
+        padding: 8px;
+    }
+
+    .message {
+        font-size: 11px;
+    }
+}
