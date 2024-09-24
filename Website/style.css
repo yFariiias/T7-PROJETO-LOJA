@@ -15,13 +15,10 @@ body {
 /*======================================================== CARROSEL & BANNER =========================================================*/
 
 .banner {
-    max-width: 1500px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    box-sizing: border-box;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     overflow: hidden;
 }
 
@@ -52,7 +49,7 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .banner-item {
@@ -91,7 +88,7 @@ body {
 }
 
 .banner-content .btn:hover {
-    background-color: #ffd800;
+    background-color: #d8bc1b;
 }
 
 .prev-arrow, .next-arrow {
@@ -123,7 +120,7 @@ body {
 /*======================================================== PRODUTOS =========================================================*/
 
 .produtos {
-    padding: 20px;
+    padding: 0px;
     text-align: left;
     color: #001538;
 }
@@ -139,12 +136,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 .produto {
-    width: 100%;
-    max-width: 300px;
+    max-width: 275px;
     padding: 10px;
     margin: 10px;
 }
@@ -155,6 +151,7 @@ body {
     border-radius: 0;
     transition: opacity 0.3s ease;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .produto h3 {
@@ -183,12 +180,12 @@ body {
 }
 
 .produto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .produto:hover img {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .produto:hover h3 {
@@ -246,17 +243,17 @@ body {
 }
 
 .image-wrapper img {
-    border-radius: 15px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
 .recommended-large img {
-    width: 646px;
+    width: 730px;
     height: 514px;
 }
 
 .recommended-small .recommended-item img {
-    width: 461px;
+    width: 415px;
     height: 252px; 
 }
 
@@ -301,26 +298,18 @@ body {
     overflow: hidden;
 }
 
-/*======================================================== CONHEÇA =========================================================*/
+/*======================================================== FACILITY =========================================================*/
 
- .conheca_sobre {
+.conheca_sobre {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-    background-image: url('https://cdn.prod.website-files.com/65dddae646838878d1f915cd/65df39fd947339c4d4b0db94_trace.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    background-color: #001538;
-    transition: 1s;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
-}
+    gap: 20px;
+    padding: 20px;
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 40px;
+}  
 
 .facility{
     align-items: center;
@@ -379,7 +368,7 @@ body {
 .conheca img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 0px;
     transition: none;
 }
 
@@ -417,11 +406,6 @@ body {
     opacity: 1;
 }
 
-.conheca:hover img {
-    transform: none;
-    box-shadow: none;
-}
-
 .conheca p {
     margin: 5px 0;
     font-size: 1rem;
@@ -436,30 +420,6 @@ body {
     color: #1aa1d4;
 }
 
-.conheca:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    transform: translateY(-5px);
-}
-
-.conheca:hover img {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/*======================================================== INFORMAÇÕES =========================================================*/
-
-.informacoes {
-    height: fit-content;
-    min-height: 800px;
-    display: flex;
-    align-items: center;
-    background-image: url("../imgs/semi_circulo.png");
-    background-repeat: no-repeat;
-    background-size: 700px 800px;
-    background-position: right;
-    transition: 1s;
-}
-
 /*======================================================== ENDEREÇO =========================================================*/
 
 .contact-container {
@@ -471,7 +431,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 1200px;
+    max-width: 1140px;
     margin: auto;
     margin-top: 40px;
 }
@@ -541,7 +501,8 @@ body {
   justify-content: left;
   text-align: center;
   height: auto;
-  max-width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .big-info h3 {
@@ -605,7 +566,15 @@ table {
     padding: 1em;
     max-width: 500px;
     min-width: 320px;
-    margin: 10px auto; /* Alterado para centralizar horizontalmente */
+    margin: 10px auto;
+}
+
+.opening-hours h1 {
+    text-align: center;
+}
+
+.opening-hours p {
+    text-align: center;
 }
 
 .fvl-d > td {
@@ -646,9 +615,9 @@ table {
 
 /*======================================================== MEDIA QUERY =========================================================*/
 
-/* BANNER */
+/* 500px */
 
-@media (min-width: 390px) and (max-width: 490px) {
+@media (min-width:300px) and (max-width: 500px) {
     .banner {
         display: flex;
         flex-direction: column;
@@ -668,8 +637,8 @@ table {
     }
 
     .banner-carousel img {
-        width: 100%; /* Para garantir que a imagem ocupe toda a largura */
-        height: auto; /* Ajusta a altura proporcionalmente */
+        width: 100%;
+        height: auto;
     }
 
     .banner-content {
@@ -697,98 +666,25 @@ table {
     .slick-dots, .prev-arrow, .next-arrow {
         display: none !important;
     }
-}
 
-@media (max-width: 500px) {
-        .banner {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            height: auto;
-            padding: 0;
-            margin: 0; 
-            overflow: hidden;
-            width: 100%;
-        }
+    .coleçoes h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 33px;
+    }
+
+    .recommended-large img, .recommended-small .recommended-item img, .image-wrapper img {
+        width: 99%;
+        height: 180px;
+        border-radius: 0px !important;
+        margin-left: 15px;
+        display: none;
+    }
     
-        .banner-item {
-            width: 100%;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    
-        .banner-carousel img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-            border-radius: 0px;
-        }
-    
-        .banner-content {
-            width: 100%;
-            max-width: 100%;
-            padding: 10px;
-            text-align: left;
-            margin: 0;
-        }
-    
-        .banner-content h1 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-        }
-    
-        .banner-content p {
-            font-size: 0.9rem;
-            margin-bottom: 12px;
-        }
-    
-        .btn {
-            font-size: 0.9rem;
-            padding: 8px 15px;
-        }
-    
-        .slick-dots, .prev-arrow, .next-arrow {
-            display: none !important;
-        }
+    .coleçoes {
+        display: none;
     }
 
-@media (max-width: 800px) {
-    .banner {
-        width: 100%;
-    }
-
-   .banner-carousel img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .banner-content {
-        width: 100%;
-        padding: 10px;
-        text-align: left;
-    }
-
-    .banner-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .banner-content p {
-        font-size: 0.8rem;
-    }
-
-    .banner-content .btn {
-        padding: 5px 10px;
-    }
-
-    .slick-dots, .prev-arrow, .next-arrow {
-        display: none !important;
-    }
-
-/* COLEÇÕES */
-@media (max-width: 800px) {
     .coleçoes-grid {
         flex-direction: column;
         align-items: center;
@@ -801,114 +697,9 @@ table {
         border-radius: 0px;
     }
 
-    .recommended-large img, .recommended-small .recommended-item img, .image-wrapper img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 0px !important;
-        margin: 0;
+    .conheca {
+        border-radius: 0;
     }
-}
-
-@media (max-width: 500px) {
-    .coleçoes h2 {
-        font-size: 2rem;
-        text-align: left;
-        margin-left: 33px;
-    }
-
-    .recommended-large img, .recommended-small .recommended-item img, .image-wrapper img {
-        width: 100%;
-        height: 200px;
-        border-radius: 0px !important;
-        margin-left: 15px;
-    }
-}
-
-@media (max-width: 390px) {
-    .coleçoes h2 {
-        font-size: 1.5rem;
-        text-align: left;
-        margin-left: 33px;
-    }
-
-    .recommended-large img, .recommended-small .recommended-item img, .image-wrapper img {
-        width: 99%;
-        height: 180px;
-        border-radius: 0px !important;
-        margin-left: 15px;
-    }
-}
-}
-
-/* CONHEÇA */
-@media (max-width: 800px) {
-    .conheca_sobre {
-        text-align: left;
-    }
-
-    .conheca_botoes {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .conheca img {
-        width: 100%;
-        height: auto;
-        border-radius: 0px;
-    }
-
-    .facility {
-        text-align: left;
-        width: 100%;
-    }
-
-    .facility p {
-        font-size: 2rem;
-    }
-
-    .produtos h2 {
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-        text-align: center;
-        margin-right: 0px;
-    }
-
-    .coleçoes h2 {
-        font-size: 1.8rem;
-        text-align: center;
-        margin-right: 40px;
-        margin-bottom: 15px;
-    }
-    
-    .conheca_titulo {
-        font-size: 1.8rem;
-        text-align: center;
-        margin-bottom: 15px;
-        margin-left: 45px;
-    }
-
-}
-
-
-@media (max-width: 500px) {
-    .conheca_botoes {
-        width: 100%;
-    }
-
-    .conheca img {
-        width: 100%;
-        height: auto;
-        border-radius: 0px;
-    }
-
-    .facility p {
-        font-size: 0.9rem;
-        margin-bottom: 25px;
-        text-align: center;
-    }
-
     .conheca_titulo {
         font-size: 1.6rem;
         text-align: center;
@@ -918,9 +709,90 @@ table {
     .produtos h2, .coleçoes h2 {
         font-size: 1.6rem;
     }
+    
+    .contact-container{
+        border-radius: 0;
+    }
 
+    .facility p {
+        font-size: 15px;
+    }
+
+    .opening-hours p {
+        font-size: 14px;
+    }
 }
+
+
+/* 800px */
+
 @media (max-width: 800px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+        padding: 0;
+        margin: 0; 
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .banner-item {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .banner-carousel img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 0px;
+    }
+    
+    .banner-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        text-align: left;
+        margin: 0;
+    }
+    
+    .banner-content h1 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    
+    .banner-content p {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    
+    .slick-dots, .prev-arrow, .next-arrow {
+        display: none !important;
+    }
+
+    .coleçoes h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 33px;
+    }
+
+   
+
+    .recommended-container {
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
     h1 {
         font-size: 14px;
     }
@@ -934,27 +806,16 @@ table {
         max-width: 90%;
     }
 
+    .opening-hours p {
+        font-size: 14px;
+    }
+
     .fvl-d > td {
         font-size: 11px;
         padding: 0.8em;
     }
-}
 
-@media (max-width: 500px) {
-    h1 {
-        font-size: 12px;
-    }
-
-    p {
-        font-size: 10px;
-    }
-
-    .opening-hours {
-        padding: 0.5em;
-    }
-
-    .fvl-d > td {
-        font-size: 10px;
-        padding: 0.5em; 
+    .facility p {
+        font-size: 15px;
     }
 }
