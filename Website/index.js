@@ -1,7 +1,7 @@
 //Banner 
 $(document).ready(function(){
     $('.banner-carousel').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 300, 
         slidesToShow: 1,
