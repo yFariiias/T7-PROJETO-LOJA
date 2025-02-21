@@ -426,11 +426,11 @@ body, html {
         }
 
         nav {
-            margin: 0 0 0 3000px;
+            margin: 0 0 0 250px;
         }
 
         .icons {
-            margin-right: 2000px;
+            margin-right: 150px;
         }
     }
 }
