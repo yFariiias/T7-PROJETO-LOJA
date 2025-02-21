@@ -422,7 +422,7 @@ body, html {
     /* Ajustes específicos para 1440x900 */
     @media (max-width: 1440px) {
         .logo {
-            margin-left: 200px;
+            margin-left: 0px;
         }
 
         nav {
@@ -430,7 +430,7 @@ body, html {
         }
 
         .icons {
-            margin-right: 60px;
+            margin-right: 75px;
         }
     }
 }
